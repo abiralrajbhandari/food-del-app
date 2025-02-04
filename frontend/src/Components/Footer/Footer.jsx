@@ -25,8 +25,8 @@ function Footer() {
         <div className="footer-content-center">
           <h2>Book Your Table!</h2>
           <ul>
-            <li>info@roadhouse.com.np</li>
-            <li>+977 9869098735</li>
+            <li>roadhouse@example.com</li>
+            <li>+977 0123456789</li>
           </ul>
         </div>
         <div className="footer-content-right">
@@ -38,7 +38,7 @@ function Footer() {
       </div>
       <hr />
       <p className="footer-copyright">
-        Copyright 2024 &copy; abiralrajbhandari.com.np - All Rights Reserved.
+        Copyright 2025 &copy; abiralrajbhandari.com.np - All Rights Reserved.
       </p>
     </div>
   );
