@@ -1,0 +1,276 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 24px 150px 24px 150px;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.dark-nav {
+  background: #ffffff;
+  transition: 0.5s;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: Playfair Display;
+}
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: black;
+  font-size: 16px;
+  font-family: Poppins;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.navbar button {
+  font-size: 15px;
+  padding: 11px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: transparent;
+  color: bkack;
+  border: 1px solid black;
+}
+.navbar button:hover {
+  transform: scale(1.05);
+}
+.active {
+  border-bottom: 2px solid #d21b26;
+  padding-bottom: 2px;
+}
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar-search-icon {
+  position: relative; /* So that .dot is positioned relative to this container */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: green; /* Change to your preferred color */
+  border-radius: 5px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+/* ------------------ */
+/* Profile Container */
+.navbar-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Profile Icon */
+.navbar-profile img {
+  width: 22px;
+  height: 25px;
+  /* width: 28px;
+  height: 32px; */
+  border-radius: 20%;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Dropdown Styling */
+.nav-profile-dropdown {
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  width: 150px;
+}
+
+/* Show dropdown on hover */
+.navbar-profile:hover .nav-profile-dropdown {
+  display: block;
+}
+
+/* Dropdown Items */
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-profile-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Icon in Dropdown */
+.nav-profile-dropdown img {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Divider in Dropdown */
+.nav-profile-dropdown hr {
+  margin: 4px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+.basket {
+  width: 27px;
+  height: 26px;
+}
+
+/* Responsive Styling */
+
+/* Media Query Adjustments */
+@media (max-width: 1050px) {
+  .navbar {
+    padding: 24px 105px 24px 105px;
+  }
+  .logo {
+    font-size: 28px;
+  }
+  .navbar-menu {
+    gap: 20px;
+    font-size: 16px;
+  }
+  .navbar-right {
+    gap: 30px;
+  }
+  .navbar-right img {
+    width: 24px;
+    height: 28px;
+  }
+  .navbar-profile img {
+    width: 22px;
+    height: 28px;
+  }
+  .navbar button {
+    font-size: 14px;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 24px 100px 24px 100px;
+  }
+  .logo {
+    font-size: 25px;
+  }
+  .navbar-menu {
+    gap: 15px;
+    font-size: 15px;
+  }
+  .navbar-right {
+    gap: 20px;
+  }
+  .navbar-right img {
+    width: 24px;
+    height: 26px;
+  }
+  .navbar-profile img {
+    width: 22px;
+    height: 26px;
+  }
+  .navbar button {
+    font-size: 13px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    padding: 24px 80px 24px 80px;
+  }
+  /* Hide the menu at small screens */
+  .navbar-menu {
+    display: none;
+  }
+  .navbar button {
+    font-size: 12px;
+    padding: 11px 20px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar-profile img {
+    width: 22px;
+    height: 25px;
+  }
+  .navbar-right img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav-profile-dropdown {
+    width: 110px;
+    padding: 6px 0;
+    font-size: 14px;
+  }
+
+  .nav-profile-dropdown li {
+    padding: 6px 12px;
+  }
+
+  .nav-profile-dropdown img {
+    width: 16px;
+    height: 16px;
+  }
+  .navbar button {
+    font-size: 12px;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 20px 50px 20px 50px;
+  }
+  .navbar button {
+    font-size: 12px;
+    padding: 9px 16px;
+  }
+  .navbar-right img {
+    width: 20px;
+    height: 22px;
+  }
+  .navbar-right {
+    gap: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .logo {
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .navbar-right img {
+    width: 14px;
+    height: 16px;
+    padding-top: 3px;
+    margin-right: 3px;
+  }
+  .navbar {
+    padding: 17px 40px 17px 40px;
+  }
+  .navbar button {
+    font-size: 9px;
+    padding: 6px 11px;
+  }
+}

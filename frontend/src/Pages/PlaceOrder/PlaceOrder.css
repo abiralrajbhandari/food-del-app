@@ -1,0 +1,114 @@
+.place-order {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.place-order-left {
+  width: 100%;
+  max-width: 500px; /* Use max-width instead of min-width for flexibility */
+}
+
+.place-order-left .title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.place-order-left input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  outline-color: tomato;
+}
+
+.place-order-left .multi-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.place-order-right {
+  width: 100%;
+  max-width: 500px; /* Added max-width for better responsiveness */
+}
+
+.place-order .cart-total button {
+  margin-top: 30px;
+  width: 100%; /* Make button full width for small screens */
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 900px) {
+  .place-order {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center align items */
+    gap: 30px; /* Reduce gap */
+  }
+
+  .place-order-left,
+  .place-order-right {
+    width: 100%; /* Full width for both sections */
+  }
+
+  .place-order-left {
+    order: 1; /* Delivery details first */
+  }
+
+  .place-order-right {
+    order: 2; /* Cart total below */
+  }
+
+  .place-order-left .title {
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 30px; /* Adjust spacing */
+  }
+
+  .place-order-left input,
+  .place-order-left .multi-fields input {
+    width: 100%; /* Ensure inputs are full width */
+    margin-bottom: 10px; /* Adjust spacing */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .place-order-left .multi-fields {
+    flex-direction: column; /* Stack fields vertically */
+    gap: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .place-order {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: stretch; /* Stretch to fit screen width */
+    gap: 20px; /* Smaller gap between sections */
+    padding: 0 10px; /* Add padding for smaller screens */
+  }
+
+  .place-order-left .title {
+    font-size: 20px; /* Smaller font size */
+    text-align: center; /* Center align title text */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  .place-order-left input,
+  .place-order-left .multi-fields input {
+    width: 100%; /* Inputs take full width */
+    padding: 8px; /* Adjust padding */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .place-order-left .multi-fields {
+    flex-direction: column; /* Stack fields vertically */
+    gap: 10px;
+  }
+
+  .place-order .cart-total button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+  }
+}

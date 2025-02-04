@@ -1,0 +1,123 @@
+/* .about{
+    margin-top: 91px;
+    height: 80vh;
+} */
+
+/* About.css */
+.about {
+    margin: 91px auto auto auto;
+    height: auto;
+    font-family: Arial, sans-serif;
+    color: #341C1B;
+    line-height: 1.6;
+    /* margin: 0 auto; */
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  /* Banner Section */
+  .about-banner {
+    text-align: center;
+    background-color: #341C1B; /* Branding red color */
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .about-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-banner p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Content Section */
+  .about-content {
+    margin-top: 30px;
+  }
+  
+  .about-content section {
+    margin-bottom: 40px;
+  }
+  
+  .about-content h2 {
+    font-size: 1.8rem;
+    color: #341C1B; /* Highlight headings with branding color */
+    margin-bottom: 10px;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    color: #341C1B;
+    text-align: justify;
+  }
+  
+  .about-content ul {
+    list-style-type: square;
+    padding-left: 20px;
+    color: #341C1B;
+  }
+  
+  .about-content ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .about-banner {
+      padding: 40px 15px;
+    }
+  
+    .about-banner h1 {
+      font-size: 2rem;
+    }
+  
+    .about-banner p {
+      font-size: 1rem;
+    }
+  
+    .about-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-content p {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .about {
+      padding: 15px;
+      margin: 62px auto auto auto;
+    }
+  
+    .about-banner {
+      padding: 30px 15px;
+    }
+  
+    .about-banner h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about-banner p {
+      font-size: 0.9rem;
+    }
+  
+    .about-content h2 {
+      font-size: 1.3rem;
+    }
+  
+    .about-content p {
+      font-size: 0.9rem;
+    }
+  
+    .about-content ul li {
+      font-size: 0.9rem;
+    }
+  }
+  

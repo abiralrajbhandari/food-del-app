@@ -1,0 +1,11 @@
+import mongoose from "mongoose";
+
+export const connectDB = async () => {
+  await mongoose
+    .connect(
+      "mongodb+srv://abiralrajbhandari:abiral1611@cluster0.quntc.mongodb.net/food-delivery"
+    )
+    .then(() => {
+      console.log("Connected to MongoDB Database.");
+    });
+};

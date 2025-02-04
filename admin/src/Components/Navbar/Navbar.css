@@ -1,0 +1,22 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 8px 4%;
+  background-color: #fff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.logo {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: Playfair Display;
+}
+.navbar .profile {
+  width: 28px;
+  height: 32px;
+  border-radius: 20%;
+}

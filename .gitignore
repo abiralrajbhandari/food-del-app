@@ -1,0 +1,23 @@
+# Ignore node_modules in all subdirectories
+**/node_modules/
+
+# Ignore build and dist folders
+frontend/build/
+backend/dist/
+admin/build/
+
+# Ignore environment and secret files
+**/.env
+
+# Ignore log files, temp files, and cache
+**/logs/
+**/tmp/
+**/cache/
+
+# Ignore database files (if any)
+**/*.sqlite
+**/db.sqlite3
+
+# Ignore system & editor files
+.vscode/
+.DS_Store

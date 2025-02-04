@@ -1,0 +1,112 @@
+/* Center the popup on the screen with an overlay */
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .login-popup-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .login-popup-title h2 {
+    font-size: 1.5em;
+    color: #333333;
+  }
+  
+  .login-popup-title img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s;
+  }
+  
+  .login-popup-title img:hover {
+    transform: rotate(90deg);
+  }
+  
+  .login-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-popup-inputs input {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .login-popup-inputs input:focus {
+    border-color: #555;
+  }
+  
+  
+  .login-popup-container button {
+    background-color: #D21B26;
+    color: white;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  
+  
+  .login-popup-condition {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    font-size: 0.9em;
+    color: #666666;
+   
+  }
+  
+  .login-popup-condition input {
+    width: 18px;
+    height: 18px;
+    
+  }
+ 
+  .login-popup p {
+    font-size: 0.9em;
+    color: #666666;
+    text-align: center;
+  }
+  
+  .login-popup p span {
+    color: #D21B26;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .login-popup p span:hover {
+    text-decoration: underline;
+  }
+  
